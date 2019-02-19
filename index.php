@@ -109,9 +109,9 @@
         <section class="connect">
             <h1>Connect With Me</h1>
             <center>
-            <a href="https://www.linkedin.com/in/dddat/" target="_blank" class="fa fa-linkedin-square" style="font-size:48px;color:#00008B;padding:0.2em"></a>
+            <a href="https://www.linkedin.com/in/dddat/" target="_blank" class="fa fa-linkedin-square" style="font-size:48px;color:#3f729b;padding:0.2em"></a>
             <a href="https://github.com/dddat1017" target="_blank" class="fa fa-github" style="font-size:48px;color:black;padding:0.2em"></a>
-            <a href="https://www.facebook.com/datdo1017" target="_blank" class="fa fa-facebook" style="font-size:48px;color:black;padding:0.2em"></a>
+            <a href="https://www.facebook.com/datdo1017" target="_blank" class="fa fa-facebook-square" style="font-size:48px;color:#3b5998;padding:0.2em"></a>
             </center>
         </section>
 
