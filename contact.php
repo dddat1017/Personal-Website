@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <nav >        
+        <nav id="contact-nav">        
             <ul>
                 <li class="active"><a href="index.php" target="_blank"><strong>Dat Do</strong></a></li>
                 <li><a href="index.php#portfolioo" target="_blank"><strong>Portfolio</strong></a></li>
