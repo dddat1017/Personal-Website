@@ -70,6 +70,11 @@
         <section class="portfolio" id="portfolioo">
             <h1>Some of my work</h1>
             <div class="container">
+                <button class="accordion">Scraping Youtube Comments</button>
+                <div class="panel">
+                    <p>Project Insight: Scrape data (comments) from any Youtube video. Uses a browser simulator to work with the dynamics of Youtube web pages. Note, only the <em>comments</em> will be extracted, not any of the replies that may be under a comment. Tech stack: Python, Selenium, etc. <a href="https://github.com/dddat1017/Scraping-Youtube-Comments" target="_blank"><strong><em>Learn more!</em></strong></a></p>
+                    <img src="images/YTcomments_Scraping.png" alt="portfolio item" style="width:311px;height:200px;"/>
+                </div>
                 <button class="accordion">Facial Detection and Recognition</button>
                 <div class="panel">
                     <p>Project Insight: Computer vision model that detects and recognizes real-life human faces. A neat implementation to this is that it collects and trains data almost instantaneously. Tech stack: Python, OpenCV, etc. <a href="https://github.com/dddat1017/Facial-Detection-Recognition" target="_blank"><strong><em>Learn more!</em></strong></a></p>
