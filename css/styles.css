@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* Everything */
+
+* {
+    text-transform: uppercase;
+}
+
+/* Body */
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+/* Every image*/
+
+img {
+    margin-top: 5em;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+    font-weight: 600;
+    font-size: 2.3rem;
+    letter-spacing: 7px;
+}
+
+/* "Dat Do" */
+
+.title {
+    font-weight: 900;
+    font-size: 2.75rem;
+    color: #F8F8FF;
+    letter-spacing: 10px;
+}
+
+/* Intro below the name */
+
+.intro {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #F8F8FF;
+}
+
+/* "Read More" button */
+
+.button {
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+    color: #DDD;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background-color: darkgoldenrod;
+}
+
+/* Navigation Bar */
+
+nav {
+    position: fixed;
+}
+
+nav.black {
+    background: #CCC;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: .5em;
+    color: goldenrod;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #DDD;
+}
+
+nav ul li a:after {
+    background-color: transparent;
+}
+
+nav ul li a.active:after {
+    background-color: transparent;
+}
+
+/* home-hero */
+
+.home-hero {
+    background-image: url(../images/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3em;
+    color: #DDD;
+}
+
+/* home-about */
+
+.home-about {
+    background-color: #A9A9A9;
+    background-size: cover;
+    padding: 30px;
+}
+
+/* home-about-textbox */
+
+.home-about-textbox {
+    padding: .5em;
+    letter-spacing: 2px;
+}
+
+.home-about-textbox p {
+    outline: 2px solid #DDD;
+    outline-offset: 0.5em;
+    font-weight: 400;
+    padding: 1em;
+    margin-bottom: 2.5em;
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: #778899;
+    background-size: cover;
+    padding: 30px;
+}
+
+/* Portfolio Buttons */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+button.accordion.active, 
+button.accordion:hover {
+    background-color: #ccc;
+}
+
+button.accordion:after {
+    content: '\25bc';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\25b2";
+}
+
+/* Panels when Portfolio Buttons are clicked */
+.panel {
+    padding: 0 18px;
+    background-color: #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.panel.show {
+    opacity: 1;
+    max-height: 500px;  
+    padding: 25px;
+}
+
+.panel.hide {
+    opacity: 0;
+    height: 0;  
+}
+
+.panel img {
+    margin-top: 0.25em;
+}
+
+/* future */
+
+.future {
+    background-color: #A9A9A9;
+    padding: 30px;
+    background-size: cover;
+}
+
+/* List in future section */
+section.future ul li {
+  list-style-type: none;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+}
+
+section.future ul li:before {
+    content: "\25BA \0020";
+}
+
+/* connect */
+
+.connect {
+    background-image: url(../images/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3em;
+    color: black;
+}
+
+/* Contact page */
+
+.contact {
+    text-align: left;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    padding-top: 65px;
+}
+
+textarea, input {
+    text-transform: none;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 6px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a dark cyan color */
+button[type=submit]:hover {
+    background-color: darkgoldenrod;
+}
+
+/* Reset button */
+button[type=reset] {
+    font-size: 8px;
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
