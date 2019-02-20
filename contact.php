@@ -4,6 +4,7 @@
 
     <head>
         <title>Dat's World</title>
+        <link rel="icon" href="images/header.jpg">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
