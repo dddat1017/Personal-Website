@@ -60,8 +60,8 @@
 
         <section class="home-about" id="about">
             <div class="container">
+                <h1>About</h1>
                 <div class="home-about-textbox">
-                    <h1>About</h1>
                     <p>Hi! My name is Dat. I'm a student at Bellevue College who is super curious in the fields of computer science and mathematics. The summer of 2018 I interned at the Port of Seattle where I worked on some pretty cool Machine Learning projects. From facial recognition to natural language processing, the whole experience was one to remember. I look forward to learning and building more software as I'm eager to make an impact in this world of technology. My goal is to spend a lot more time researching and developing the ideas and theories that interest me, and share everything that I learn onto this site.</p>
                 </div>
             </div>
@@ -102,15 +102,15 @@
         <section class="future">
             <h1>Looking Forward</h1>
             <h2>(Teach Myself 2019)</h2>
-            <ul>
-                <li>Full Stack Web Development (applying a structured stack to this website)</li>
-                <li>More Machine Learning/AI - Natural Language Processing | Reinforcement Learning</li>
-                <li>Deeper understanding of Data Structures and Algorithms</li>
-                <li>Game Development (getting familiar with Unity)</li>
-                <li>IOS & Android Software Development</li>
-                <li>Blockchain</li>
-                <li>And MORE to come</li>
-            </ul>
+            <div class="container">
+                <h3><i class="pipe-left"></i>Full Stack Web Development (applying a structured stack to this website)<i class="pipe-right"></i></h3>
+                <h3><i class="pipe-left"></i>More Machine Learning/AI - Natural Language Processing | Reinforcement Learning<i class="pipe-right"></i></h3>
+                <h3><i class="pipe-left"></i>Deeper understanding of Data Structures and Algorithms<i class="pipe-right"></i></h3>
+                <h3><i class="pipe-left"></i>Game Development (getting familiar with Unity)<i class="pipe-right"></i></h3>
+                <h3><i class="pipe-left"></i>IOS & Android Software Development<i class="pipe-right"></i></h3>
+                <h3><i class="pipe-left"></i>Blockchain<i class="pipe-right"></i></h3>
+                <h3>And MORE to come!</h3>
+            </div>
         </section>
 
         <section class="connect">

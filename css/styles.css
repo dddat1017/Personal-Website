@@ -78,10 +78,6 @@ nav {
     position: fixed;
 }
 
-#contact-nav {
-    background-color: #CCC;
-}
-
 nav.black {
     background: #CCC;
 }
@@ -124,7 +120,7 @@ nav ul li a.active:after {
     background-image: url(../images/Background.jpg);
     background-size: cover;
     background-position: center;
-    padding: 3em;
+    padding: 30px;
     color: #DDD;
 }
 
@@ -157,6 +153,7 @@ nav ul li a.active:after {
     background-color: #778899;
     background-size: cover;
     padding: 30px;
+    padding-bottom: 70px;
 }
 
 /* Portfolio Buttons */
@@ -203,7 +200,7 @@ button.accordion.active:after {
 .panel.show {
     opacity: 1;
     max-height: 500px;  
-    padding: 25px;
+    padding: 30px;
 }
 
 .panel.hide {
@@ -220,18 +217,25 @@ button.accordion.active:after {
 .future {
     background-color: #A9A9A9;
     padding: 30px;
+    padding-bottom: 40px;
     background-size: cover;
 }
 
 /* List in future section */
-section.future ul li {
-  list-style-type: none;
-  padding-bottom: 5px;
-  font-size: 1.5em;
+i.pipe-left {
+    margin-right: 0.5em;
+    position: static;
+    width: 0.2em;
+    height: 0.2em;
+    border: 0.1em solid black;
 }
 
-section.future ul li:before {
-    content: "\25BA \0020";
+i.pipe-right {
+    margin-left: 0.5em;
+    position: static;
+    width: 0.2em;
+    height: 0.2em;
+    border: 0.1em solid black;
 }
 
 /* connect */
@@ -240,7 +244,7 @@ section.future ul li:before {
     background-image: url(../images/Background.jpg);
     background-size: cover;
     background-position: center;
-    padding: 3em;
+    padding: 30px;
     color: black;
 }
 
