@@ -4,6 +4,7 @@
 
     <head>
         <title>Dat's World</title>
+        <link rel="icon" href="images/header.jpg">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -36,7 +37,6 @@
                 });
             });
         </script>
-
     </head>
 
     <body>
@@ -73,23 +73,23 @@
                 <button class="accordion">Scraping Youtube Comments</button>
                 <div class="panel">
                     <p>Project Insight: Scrape data (comments) from any Youtube video. Uses a browser automator to work with the dynamics of Youtube web pages. Note, only the <em>comments</em> will be extracted, not any of the replies that may be under a comment. Tech stack: Python, Selenium, etc. <a href="https://github.com/dddat1017/Scraping-Youtube-Comments" target="_blank"><strong><em>Learn more!</em></strong></a></p>
-					<img src="https://user-images.githubusercontent.com/40379856/53034446-05abeb80-3428-11e9-91c3-1025143846b0.gif" width="45%" style="max-width:100%;">
-					<img src="https://user-images.githubusercontent.com/40379856/53034445-05135500-3428-11e9-8e37-ed3830272d68.gif" width="45%" style="max-width:100%;">
+					<img src="images/YTcomments.gif" width="45%" style="max-width:100%;max-height:70%;">
+					<img src="images/scraping.gif" width="45%" style="max-width:100%;">
                 </div>
                 <button class="accordion">Facial Detection and Recognition</button>
                 <div class="panel">
                     <p>Project Insight: Computer vision model that detects and recognizes real-life human faces. A neat implementation to this is that it collects and trains data almost instantaneously. Tech stack: Python, OpenCV, etc. <a href="https://github.com/dddat1017/Facial-Detection-Recognition" target="_blank"><strong><em>Learn more!</em></strong></a></p>
-                    <img src="images/Face.gif" alt="portfolio item" style="width:311px;height:200px;"/>
+                    <img src="images/Face.gif" width="50%" style="max-width:100%;"/>
                 </div>
                 <button class="accordion">Handwritten Digits Classification</button>
                 <div class="panel">
                     <p>Project Insight: Convolutional neural network (CNN) model that recognizes handwritten digits from the MNIST Dataset. Tech stack: Python, Pytorch, Numpy, Matplotlib, etc. <a href="https://github.com/dddat1017/Handwritten-Digits-Classification" target="_blank"><strong><em>Learn more!</em></strong></a></li></h4></p>
-                    <img src="images/Numbers.gif" alt="portfolio item" style="width:311px;height:200px;"/>
+                    <img src="images/Digits.gif" width="50%" style="width:290px;height:300px;"/>
                 </div>
                 <button class="accordion">Wizard Top Down Shooting Game</button>
                 <div class="panel">
                     <p>Project Insight: Simple Wizard Top Down Shooter Game to become familiarized with writing code for a game. Interesting, easy way to get started. Tech stack: Java, Java Swing, Object Oriented Programming, etc. <a href="https://github.com/dddat1017/Wizard-Top-Down-Shooting-Game" target="_blank"><strong><em>Learn more!</em></strong></a></p>
-                    <img src="images/Wiz4rdGame.gif" alt="portfolio item" style="width:311px;height:200px;"/>
+                    <img src="images/Wiz4rdGame.gif" width="50%" style="max-width:100%;"/>
                 </div>
                 <button class="accordion">Research Paper</button>
                 <div class="panel">
@@ -103,12 +103,12 @@
             <h1>Looking Forward</h1>
             <h2>(Teach Myself 2019)</h2>
             <div class="container">
-                <h3><i class="pipe-left"></i>Full Stack Web Development (applying a structured stack to this website)<i class="pipe-right"></i></h3>
-                <h3><i class="pipe-left"></i>More Machine Learning/AI - Natural Language Processing | Reinforcement Learning<i class="pipe-right"></i></h3>
-                <h3><i class="pipe-left"></i>Deeper understanding of Data Structures and Algorithms<i class="pipe-right"></i></h3>
-                <h3><i class="pipe-left"></i>Game Development (getting familiar with Unity)<i class="pipe-right"></i></h3>
-                <h3><i class="pipe-left"></i>IOS & Android Software Development<i class="pipe-right"></i></h3>
-                <h3><i class="pipe-left"></i>Blockchain<i class="pipe-right"></i></h3>
+                <h3><i class="bullet">&bull;</i>Full Stack Web Development (applying a structured stack to this website)</h3>
+                <h3><i class="bullet">&bull;</i>More Machine Learning/AI - Natural Language Processing & Reinforcement Learning</h3>
+                <h3><i class="bullet">&bull;</i>Deeper understanding of Data Structures and Algorithms</h3>
+                <h3><i class="bullet">&bull;</i>Game Development (getting familiar with Unity)</h3>
+                <h3><i class="bullet">&bull;</i>IOS & Android Development</h3>
+                <h3><i class="bullet">&bull;</i>Blockchain</h3>
                 <h3>And MORE to come!</h3>
             </div>
         </section>

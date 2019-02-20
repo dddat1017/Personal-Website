@@ -17,7 +17,7 @@ body {
 /* Every image*/
 
 img {
-    margin-top: 5em;
+    margin-top: 7em;
     max-width: 100%;
     height: auto;
 }
@@ -121,6 +121,7 @@ nav ul li a.active:after {
     background-size: cover;
     background-position: center;
     padding: 30px;
+    padding-bottom: 60px;
     color: #DDD;
 }
 
@@ -142,6 +143,7 @@ nav ul li a.active:after {
 .home-about-textbox p {
     outline: 2px solid #DDD;
     outline-offset: 0.5em;
+    font-size: 1.2em;
     font-weight: 400;
     padding: 1em;
     margin-bottom: 2.5em;
@@ -158,13 +160,14 @@ nav ul li a.active:after {
 
 /* Portfolio Buttons */
 button.accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #F5F5F5;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
-    outline: none;
+    outline: 0 solid black;
+    border-radius: 3px;
     font-size: 15px;
     transition: 0.4s;
     font-weight: 600;
@@ -172,25 +175,28 @@ button.accordion {
 
 button.accordion.active, 
 button.accordion:hover {
-    background-color: #ccc;
+    background-image: url(../images/portfolio_background.jpg);
+    background-size: cover;
+    color: white;
 }
 
 button.accordion:after {
     content: '\25bc';
     font-size: 13px;
-    color: #777;
+    color: black;
     float: right;
     margin-left: 5px;
 }
 
 button.accordion.active:after {
     content: "\25b2";
+    color: white;
 }
 
 /* Panels when Portfolio Buttons are clicked */
 .panel {
     padding: 0 18px;
-    background-color: #ccc;
+    background-color: #ddd;
     max-height: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
@@ -222,20 +228,9 @@ button.accordion.active:after {
 }
 
 /* List in future section */
-i.pipe-left {
-    margin-right: 0.5em;
-    position: static;
-    width: 0.2em;
-    height: 0.2em;
-    border: 0.1em solid black;
-}
-
-i.pipe-right {
-    margin-left: 0.5em;
-    position: static;
-    width: 0.2em;
-    height: 0.2em;
-    border: 0.1em solid black;
+i.bullet {
+    margin-right: 0.4em;
+    font-size: 1.4em;
 }
 
 /* connect */
@@ -248,7 +243,7 @@ i.pipe-right {
     color: black;
 }
 
-/* Contact page */
+/* contact page */
 
 .contact {
     text-align: left;
@@ -301,6 +296,13 @@ button[type=reset] {
     border: none;
     border-radius: 2px;
     cursor: pointer;
+}
+
+/* Nav Bar Changes */
+@media (max-width: 32.9rem) {
+    #contact-nav {
+        background-color: #CCC;
+    }
 }
 
 /* footer */
