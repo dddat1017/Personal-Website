@@ -10,6 +10,7 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript">
             $(window).on('scroll', function(){
@@ -34,21 +35,12 @@
             </ul>
         </nav>
 
-        <section class="contact">
+        <section class="pathfind">
             <div class="container">
-                <h1>Let's Talk!</h1>
-                <form class="contact-form" action="contactform.php" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Full Name">
-                    <label for="mail">Email</label>
-                    <input type="text" name="mail" placeholder="Email Address">
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject" placeholder="Subject">
-                    <label for="message">Message</label>
-                    <textarea name="message" placeholder="Comments, Suggestions, Questions, or Concerns"></textarea>
-                    <button type="submit" name="submit">Submit</button>
-                    <button type="reset" value="reset">Reset</button>
-                </form>
+                <h1>Let's PathFind!</h1>
+                <div id="instructions">&#8618; Choose your START!</div>
+                <div id="tableContainer"></div>
+                <div id="okClear"></div>
             </div>
         </section>
 
@@ -64,6 +56,8 @@
         <footer class="container-fluid">
             &copy; 2019 Dat Do - All Rights Reserved.        
         </footer>
+
+        <script type = "text/javascript" src="scripts/bfs.js"></script>
     </body>
     
 </html>

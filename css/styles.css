@@ -282,7 +282,7 @@ button[type=submit] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a dark cyan color */
+/* When moving the mouse over the submit button, add a dark golden rod color */
 button[type=submit]:hover {
     background-color: darkgoldenrod;
 }
@@ -304,6 +304,93 @@ button[type=reset] {
         background-color: #CCC;
     }
 }
+
+/* PathFinding Page */
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid;
+    width: 17px;
+    height: 17px;
+}
+
+td.highlighted {
+  background-color: red;
+}
+
+.pathfind {
+    text-align: left;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.pathfind h1 {
+    padding-top: 10px;
+}
+
+#instructions {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+#okButton {
+    padding: 3px;
+}
+
+#clearButton {
+    padding: 3px;
+}
+
+#done {
+    display: inline-block;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+#done:hover {
+    background-color: darkgoldenrod;
+}
+
+#reset {
+    display: inline-block;
+    font-size: 12px;
+    background-color: grey;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+@media (max-width: 630px) {
+    td {
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    }
+
+    .pathfind {
+    padding: 45px;
+    }
+
+    .pathfind h1 {
+    padding-top: 65px;
+    }
+}
+
 
 /* footer */
 

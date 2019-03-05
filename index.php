@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>Dat's World</title>
+        <title>Dat Do</title>
         <link rel="icon" href="images/header.jpg">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,6 +70,12 @@
         <section class="portfolio" id="portfolioo">
             <h1>Some of my work</h1>
             <div class="container">
+                <button class="accordion">PathFinding Visualization</button>
+                <div class="panel">
+                    <p>Project Insight: Find the shortest path from a 'starting' cell to an 'exit' cell using the Breadth-First Search (BFS) algorithm. This implementation utlized a queue to traverse through all the possible "nodes", or cells, from the start to the exit. The goal is to find a path with the <strong>LEAST number of STEPS</strong> (a step being a cell in any direction N,S,W,E,NW,NE,SW,SE), not the "shortest distance". Tech stack: JavaScript, JQuery, Queue, etc. <a href="https://github.com/dddat1017/PathFinding-Visualization" target="_blank"><strong><em>Learn more!</em></strong></a></p>
+                    <img src="images/path.gif" width="50%" style="max-width:100%; margin-bottom:5px;"/> <br>
+                    <a href="pathfind.php" target="_blank"><strong>Check it out!</strong></a>
+                </div>
                 <button class="accordion">Scraping Youtube Comments</button>
                 <div class="panel">
                     <p>Project Insight: Scrape data (comments) from any Youtube video. Uses a browser automator to work with the dynamics of Youtube web pages. Note, only the <em>comments</em> will be extracted, not any of the replies that may be under a comment. Tech stack: Python, Selenium, etc. <a href="https://github.com/dddat1017/Scraping-Youtube-Comments" target="_blank"><strong><em>Learn more!</em></strong></a></p>
@@ -126,7 +132,7 @@
             &copy; 2019 Dat Do - All Rights Reserved.        
         </footer>
 
-        <script type = "text/javascript" src="portfolio_buttons.js"></script>
+        <script type = "text/javascript" src="scripts/portfolio_buttons.js"></script>
     </body>
 
 </html>
