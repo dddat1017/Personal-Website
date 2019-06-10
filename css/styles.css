@@ -64,12 +64,20 @@ h1 {
     border-width: 2px;
     border-style: solid;
     padding: .5em 1.75em;
-    color: #DDD;
+    color: #F8F8FF;
 }
 
-.button-accent:hover,
-.button-accent:focus {
+.button-accent:active,
+.button-accent:hover {
     background-color: darkgoldenrod;
+}
+
+/* "Read More" button's background stays transparent when clicked on in mobile*/
+@media (max-width: 1024px) {
+    .button-accent:active,
+    .button-accent:hover {
+        background-color: transparent;
+    }
 }
 
 /* Navigation Bar */
@@ -78,40 +86,55 @@ nav {
     position: fixed;
 }
 
-nav.black {
-    background: #CCC;
+    nav.black {
+        background: #22272F;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    nav a {
+        font-weight: 900;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: .5em;
+        color: goldenrod;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background-color: #22272F;
+    }
+
+    nav ul li a:after {
+        background-color: transparent;
+    }
+
+    nav ul li a.active:after {
+        background-color: transparent;
+    }
+
+/* Nav Bar has constant background color when screen width is less than 526px */
+@media (max-width: 526px) {
+    nav {
+        background-color: #22272F;
+    }
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin: 1em;
-}
-
-nav a {
-    font-weight: 900;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: .5em;
-    color: goldenrod;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-    background-color: #DDD;
-}
-
-nav ul li a:after {
-    background-color: transparent;
-}
-
-nav ul li a.active:after {
-    background-color: transparent;
+/* Nav buttons' backgrounds stay transparent when clicked on in mobile */
+@media (max-width: 1024px) {
+    nav ul li a.active,
+    nav ul li a:hover {
+        background-color: transparent;
+    }
 }
 
 /* home-hero */
@@ -122,13 +145,13 @@ nav ul li a.active:after {
     background-position: center;
     padding: 30px;
     padding-bottom: 60px;
-    color: #DDD;
 }
 
 /* home-about */
 
 .home-about {
-    background-color: #A9A9A9;
+    color: #EEE;
+    background-color: #2A313D;
     background-size: cover;
     padding: 30px;
 }
@@ -140,88 +163,111 @@ nav ul li a.active:after {
     letter-spacing: 2px;
 }
 
-.home-about-textbox p {
-    outline: 2px solid #DDD;
-    outline-offset: 0.5em;
-    font-size: 1.2em;
-    font-weight: 400;
-    padding: 1em;
-    margin-bottom: 2.5em;
-}
+    .home-about-textbox p {
+        outline: 2px solid #DDD;
+        outline-offset: 0.5em;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 1em;
+        margin-bottom: 2.5em;
+    }
 
 /* portfolio */
 
 .portfolio {
-    background-color: #778899;
+    background-color: #39424C;
     background-size: cover;
     padding: 30px;
     padding-bottom: 70px;
 }
 
+    .portfolio h1 {
+        color: #EEE;
+    }
+
 /* Portfolio Buttons */
 button.accordion {
-    background-color: #F5F5F5;
-    color: black;
+    background-color: #1a1a1a;
+    color: #EEE;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
-    outline: 0 solid black;
+    border-color: #262626;
+    outline: none;
     border-radius: 3px;
     font-size: 15px;
     transition: 0.4s;
     font-weight: 600;
 }
 
-button.accordion.active, 
-button.accordion:hover {
-    background-image: url(../images/portfolio_background.jpg);
-    background-size: cover;
-    color: white;
-}
+    button.accordion.active,
+    button.accordion:hover {
+        background-image: url(../images/portfolio_background.jpg);
+        background-size: cover;
+    }
 
-button.accordion:after {
-    content: '\25bc';
-    font-size: 13px;
-    color: black;
-    float: right;
-    margin-left: 5px;
-}
+    button.accordion:after {
+        content: '\25bc';
+        font-size: 13px;
+        color: #EEE;
+        float: right;
+        margin-left: 5px;
+    }
 
-button.accordion.active:after {
-    content: "\25b2";
-    color: white;
-}
+    button.accordion.active:after {
+        content: "\25b2";
+        color: #EEE;
+    }
 
 /* Panels when Portfolio Buttons are clicked */
 .panel {
     padding: 0 18px;
-    background-color: #ddd;
+    background-color: #262626;
     max-height: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
     opacity: 0;
+    color: #EEE;
 }
 
-.panel.show {
-    opacity: 1;
-    max-height: 500px;  
-    padding: 30px;
-}
+    .panel.show {
+        opacity: 1;
+        max-height: 500px;
+        padding: 30px;
+    }
 
-.panel.hide {
-    opacity: 0;
-    height: 0;  
-}
+    .panel.hide {
+        opacity: 0;
+        height: 0;
+    }
 
-.panel img {
-    margin-top: 0.25em;
-}
+    .panel img {
+        margin-top: 0.25em;
+    }
+
+    /* Links in panels */
+    .panel a:link {
+        text-decoration: underline;
+    }
+
+    .panel a:hover {
+        text-decoration: none;
+    }
+
+    .panel a:active {
+        text-decoration: underline;
+    }
+
+    .panel a:visited {
+        color: blue;
+    }
 
 /* future */
 
 .future {
-    background-color: #A9A9A9;
+    color: #EEE;
+    background-color: #2A313D;
     padding: 30px;
     padding-bottom: 40px;
     background-size: cover;
@@ -230,7 +276,7 @@ button.accordion.active:after {
 /* List in future section */
 i.bullet {
     margin-right: 0.4em;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 /* connect */
@@ -240,7 +286,7 @@ i.bullet {
     background-size: cover;
     background-position: center;
     padding: 30px;
-    color: black;
+    color: #F8F8FF;
 }
 
 /* contact page */
@@ -253,28 +299,29 @@ i.bullet {
     margin: 0 auto;
 }
 
-.contact h1 {
-    padding-top: 65px;
-}
+    .contact h1 {
+        padding-top: 65px;
+    }
 
 textarea, input {
     text-transform: none;
+    font: 12px arial, sans-serif;
 }
 
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 15px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 6px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 15px; /* Some padding */
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 6px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
 
 /* Style the submit button with a specific background color etc */
 button[type=submit] {
-    background-color: black;
+    background-color: #22272F;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -282,10 +329,10 @@ button[type=submit] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a dark golden rod color */
-button[type=submit]:hover {
-    background-color: darkgoldenrod;
-}
+    /* When moving the mouse over the submit button, add a dark golden rod color */
+    button[type=submit]:hover {
+        background-color: darkgoldenrod;
+    }
 
 /* Reset button */
 button[type=reset] {
@@ -296,13 +343,6 @@ button[type=reset] {
     border: none;
     border-radius: 2px;
     cursor: pointer;
-}
-
-/* Nav Bar Changes */
-@media (max-width: 32.9rem) {
-    #contact-nav {
-        background-color: #CCC;
-    }
 }
 
 /* PathFinding Page */
@@ -317,9 +357,9 @@ td {
     height: 17px;
 }
 
-td.highlighted {
-  background-color: red;
-}
+    td.highlighted {
+        background-color: red;
+    }
 
 .pathfind {
     text-align: left;
@@ -329,13 +369,14 @@ td.highlighted {
     margin: 0 auto;
 }
 
-.pathfind h1 {
-    padding-top: 10px;
-}
+    .pathfind h1 {
+        padding-top: 10px;
+    }
 
 #instructions {
     font-weight: bold;
     margin-bottom: 7px;
+    color: green;
 }
 
 #okButton {
@@ -359,9 +400,9 @@ td.highlighted {
     margin-left: 5px;
 }
 
-#done:hover {
-    background-color: darkgoldenrod;
-}
+    #done:hover {
+        background-color: darkgoldenrod;
+    }
 
 #reset {
     display: inline-block;
@@ -377,26 +418,25 @@ td.highlighted {
 
 @media (max-width: 630px) {
     td {
-    border: 1px solid;
-    width: 20px;
-    height: 20px;
+        border: 1px solid;
+        width: 20px;
+        height: 20px;
     }
 
     .pathfind {
-    padding: 45px;
+        padding: 45px;
     }
 
-    .pathfind h1 {
-    padding-top: 65px;
-    }
+        .pathfind h1 {
+            padding-top: 65px;
+        }
 }
-
 
 /* footer */
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: #22272F;
+    color: #EEE;
     padding: 8px;
     text-align: center;
 }

@@ -25,7 +25,7 @@
     </head>
 
     <body>
-        <nav id="contact-nav">        
+        <nav>        
             <ul>
                 <li class="active"><a href="index.php" target="_blank"><strong>Dat Do</strong></a></li>
                 <li><a href="index.php#portfolioo" target="_blank"><strong>Portfolio</strong></a></li>
@@ -58,6 +58,7 @@
             <a href="https://www.linkedin.com/in/dddat/" target="_blank" class="fa fa-linkedin-square" style="font-size:48px;color:#007dbb;padding:0.2em"></a>
             <a href="https://github.com/dddat1017" target="_blank" class="fa fa-github" style="font-size:48px;color:#171515;padding:0.2em"></a>
             <a href="https://www.facebook.com/datdo1017" target="_blank" class="fa fa-facebook-square" style="font-size:48px;color:#345392;padding:0.2em"></a>
+			<a href="mailto:datdo17@uw.edu" target="_top" class="fa fa-envelope" style="font-size:48px;color:#22272F;padding:0.2em"></a>
             </center>
         </section>
 

@@ -59,8 +59,9 @@ $(function() {
             m[rc[0]][rc[1]] = "S";
             startR = rc[0];     // row value of where "S" is in the matrix.
             startC = rc[1];     // col value of where "S" is in the matrix.
-            document.getElementById("instructions").innerHTML = "&#8618; Now choose the EXIT! (Click 'Clear' to reset)";
+            document.getElementById("instructions").innerHTML = "&#8618; Now choose the <strong><em>EXIT</em></strong>! (Click 'Clear' to reset)";
             $('#okClear').append('<input id="reset" type="button" value="Clear" onClick="document.location.reload(true)">');
+            $('#instructions').css('color', 'blue');
         } else if (counter < 2) {
             eyeD = $(this).attr('id');    // get 'id' of the 'td' clicked.
 
@@ -73,8 +74,9 @@ $(function() {
             m[rc[0]][rc[1]] = "E";
             endRC.push(rc[0]);
             endRC.push(rc[1]);
-            document.getElementById("instructions").innerHTML = "&#8618; Now create your BARRIER/OBSTACLE! (Click 'Okay!' when you're done or 'Clear' to reset)";
-            $('#okClear').append('<input id="done" type="button" value="Okay!" onclick="run(); this.onclick=null;">');
+            document.getElementById("instructions").innerHTML = "&#8618; Now create your <strong><em>BARRIER/OBSTACLE</em></strong>! (Click 'Okay!' when you're done or 'Clear' to reset)";
+            $('#okClear').append('<input id="done" type="button" value="Okay!" style="background-color:#22272F;" onclick="run(); this.onclick=null;">');
+            $('#instructions').css('color', 'red');
         } else {
             eyeD = $(this).attr('id');    // get 'id' of the 'td' clicked.
 
@@ -120,7 +122,7 @@ var startR;    // (initialize) row value of where "S" is, in the matrix.
 var startC;    // (initialize) col value of where "S" is, in the matrix.
 var endRC = [];    // empty matrix to store 'r, c' of "E" cell.
 
-$("#tableContainer").append(g);    // add the grid to .html.
+$("#tableContainer").append(g);    // add the grid to html.
 
 var rq = [];    // row queue.
 var cq = [];    // col queue.
@@ -150,7 +152,7 @@ function solve() {
         var ccc = cq.shift();   // dequeue the col queue.
         explore_neighbors(rrr, ccc, visited_q);    // pass in the dequeue values and the "visited queue"
     }
-    return visited_q;   // return the visited matrix.
+    return visited_q;   // return the visited queue.
 }
 
 // function to retrieve all possible "neighbors" of a cell. 
@@ -180,7 +182,7 @@ loop2:
                 rq = [];  
                 cq = [];
 
-                // enqueue [r"E"], c"E", rParent, cParent] to the "visited queue".
+                // enqueue [r"E", c"E", rParent, cParent] to the "visited queue".
                 q.push([rNeighbor, cNeighbor, rVal, cVal]);
                 visited_m[rNeighbor][cNeighbor] = true;    // mark this "E" cell as 'true' in "visited" matrix.
                 break loop1;    // break out of the nested loops.
@@ -191,7 +193,7 @@ loop2:
             rq.push(rNeighbor);
             cq.push(cNeighbor);
 
-            // enqueue [rNeighbor], cNeighbor, rParent, cParent] to the "visited queue".
+            // enqueue [rNeighbor, cNeighbor, rParent, cParent] to the "visited queue".
             q.push([rNeighbor, cNeighbor, rVal, cVal]);
             visited_m[rNeighbor][cNeighbor] = true;    // // mark this neighbor cell as 'true' in "visited" matrix.
         }
@@ -226,6 +228,7 @@ function run() {
     var finish =  solve();
     final_path = retrace(finish);
     document.getElementById("instructions").innerHTML = "&#8618; Please Wait until path is found!";
+    $('#instructions').css('color', '#48D1CC');
 
     var i = 1;
     // call setInterval once. It will run itself repeatedly until the "E" is reached.
@@ -234,9 +237,10 @@ function run() {
     function doSequence() {
         if ( i >= (final_path.length - 2)) {
             document.getElementById("instructions").innerHTML = "&#8618; Click 'Clear' to reset.";
+            $('#instructions').css('color', 'black');
             clearInterval(t);
         }
-        $("#" + final_path[i][0] + "r" + "c" + final_path[i][1]).css('background-color', 'cyan');
+        $("#" + final_path[i][0] + "r" + "c" + final_path[i][1]).css('background-color', '#48D1CC');
         i++;
     }
 }
