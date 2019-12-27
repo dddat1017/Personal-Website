@@ -42,7 +42,7 @@ h1 {
 .title {
     font-weight: 900;
     font-size: 2.75rem;
-    color: #F8F8FF;
+    color: #f5f0e1;
     letter-spacing: 10px;
 }
 
@@ -52,7 +52,7 @@ h1 {
     margin-bottom: 2em;
     font-size: 1.5em;
     font-weight: 700;
-    color: #F8F8FF;
+    color: #f5f0e1;
 }
 
 /* "Read More" button */
@@ -64,7 +64,7 @@ h1 {
     border-width: 2px;
     border-style: solid;
     padding: .5em 1.75em;
-    color: #F8F8FF;
+    color: #f5f0e1;
 }
 
 .button-accent:active,
@@ -104,7 +104,7 @@ nav {
     nav a {
         font-weight: 900;
         text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: .5em;
         color: goldenrod;
     }
@@ -150,8 +150,8 @@ nav {
 /* home-about */
 
 .home-about {
-    color: #EEE;
-    background-color: #2A313D;
+    color: #f5f0e1;
+    background-color: #22272F;
     background-size: cover;
     padding: 30px;
 }
@@ -164,7 +164,7 @@ nav {
 }
 
     .home-about-textbox p {
-        outline: 2px solid #DDD;
+        outline: 2px solid #f5f0e1;
         outline-offset: 0.5em;
         font-size: 1.2em;
         font-weight: 400;
@@ -175,20 +175,20 @@ nav {
 /* portfolio */
 
 .portfolio {
-    background-color: #39424C;
+    background-color: #f5f0e1;
     background-size: cover;
     padding: 30px;
     padding-bottom: 70px;
 }
 
     .portfolio h1 {
-        color: #EEE;
+        color: #22272F;
     }
 
 /* Portfolio Buttons */
 button.accordion {
     background-color: #1a1a1a;
-    color: #EEE;
+    color: #f5f0e1;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -210,30 +210,30 @@ button.accordion {
     button.accordion:after {
         content: '\25bc';
         font-size: 13px;
-        color: #EEE;
+        color: #f5f0e1;
         float: right;
         margin-left: 5px;
     }
 
     button.accordion.active:after {
         content: "\25b2";
-        color: #EEE;
+        color: #f5f0e1;
     }
 
 /* Panels when Portfolio Buttons are clicked */
 .panel {
     padding: 0 18px;
-    background-color: #262626;
+    background-color: #22272F;
     max-height: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
     opacity: 0;
-    color: #EEE;
+    color: #f5f0e1;
 }
 
     .panel.show {
         opacity: 1;
-        max-height: 500px;
+        max-height: 700px;
         padding: 30px;
     }
 
@@ -248,6 +248,7 @@ button.accordion {
 
     /* Links in panels */
     .panel a:link {
+        color: goldenrod;
         text-decoration: underline;
     }
 
@@ -260,24 +261,22 @@ button.accordion {
     }
 
     .panel a:visited {
-        color: blue;
+        color: goldenrod;
     }
 
-/* future */
+/* education */
 
-.future {
-    color: #EEE;
-    background-color: #2A313D;
+.education {
+    color: #f5f0e1;
+    background-color: #22272F;
     padding: 30px;
     padding-bottom: 40px;
     background-size: cover;
 }
 
-/* List in future section */
-i.bullet {
-    margin-right: 0.4em;
-    font-size: 1.2em;
-}
+    .education h3 {
+        text-align: left;
+    }
 
 /* connect */
 
@@ -286,7 +285,7 @@ i.bullet {
     background-size: cover;
     background-position: center;
     padding: 30px;
-    color: #F8F8FF;
+    color: #f5f0e1;
 }
 
 /* contact page */
@@ -297,6 +296,7 @@ i.bullet {
     background-color: #F5F5F5;
     padding: 45px;
     margin: 0 auto;
+    height: 100vh;
 }
 
     .contact h1 {
@@ -367,6 +367,7 @@ td {
     background-color: #F5F5F5;
     padding: 50px;
     margin: 0 auto;
+    height: 100vh;
 }
 
     .pathfind h1 {
@@ -436,7 +437,7 @@ td {
 
 footer {
     background-color: #22272F;
-    color: #EEE;
+    color: #f5f0e1;
     padding: 8px;
     text-align: center;
 }

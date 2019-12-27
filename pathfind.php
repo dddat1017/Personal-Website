@@ -4,7 +4,7 @@
 
     <head>
         <title>Dat Do</title>
-        <link rel="icon" href="images/header.jpg" alt="">
+        <link rel="icon" href="images/header.jpg">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -12,33 +12,24 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript">
-            $(window).on('scroll', function(){
-                if($(window).scrollTop()){
-                    $('nav').addClass('black');
-                }
-                else
-                {
-                    $('nav').removeClass('black');
-                }
-            })
-        </script>
+        <script type = "text/javascript" src="scripts/extras.js"></script>
     </head>
 
     <body>
         <nav>        
             <ul>
-                <li class="active"><a href="index.php" target="_blank"><strong>Dat Do</strong></a></li>
-                <li><a href="index.php#portfolioo" target="_blank"><strong>Portfolio</strong></a></li>
+                <li><a href="index.php" target="_blank"><strong>Dat Do</strong></a></li>
+                <li><a href="index.php#portfolio" target="_blank"><strong>Experiences + Projects</strong></a></li>
+                <li><a href="index.php#education" target="_blank"><strong>Education</strong></a></li>
                 <li><a href="resume/DatDo-Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
-                <li><a href="contact.php"><strong>Contact</strong></a></li>
+                <li><a href="contact.php" target="_blank"><strong>Contact</strong></a></li>
             </ul>
         </nav>
 
         <section class="pathfind">
             <div class="container">
                 <h1>Let's PathFind!</h1>
-                <div id="instructions">&#8618; Choose your <strong><em>START</em></strong>!</div>
+                <div id="instructions">&#8618; Choose your START.</div>
                 <div id="tableContainer"></div>
                 <div id="okClear"></div>
             </div>
@@ -46,12 +37,10 @@
 
         <section class="connect">
             <h1>Connect With Me</h1>
-            <center>
             <a href="https://www.linkedin.com/in/dddat/" target="_blank" class="fa fa-linkedin-square" style="font-size:48px;color:#007dbb;padding:0.2em"></a>
             <a href="https://github.com/dddat1017" target="_blank" class="fa fa-github" style="font-size:48px;color:#171515;padding:0.2em"></a>
             <a href="https://www.facebook.com/datdo1017" target="_blank" class="fa fa-facebook-square" style="font-size:48px;color:#345392;padding:0.2em"></a>
 			<a href="mailto:datdo17@uw.edu" target="_top" class="fa fa-envelope" style="font-size:48px;color:#22272F;padding:0.2em"></a>
-            </center>
         </section>
 
         <footer class="container-fluid">

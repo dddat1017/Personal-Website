@@ -59,7 +59,7 @@ $(function() {
             m[rc[0]][rc[1]] = "S";
             startR = rc[0];     // row value of where "S" is in the matrix.
             startC = rc[1];     // col value of where "S" is in the matrix.
-            document.getElementById("instructions").innerHTML = "&#8618; Now choose the <strong><em>EXIT</em></strong>! (Click 'Clear' to reset)";
+            document.getElementById("instructions").innerHTML = "&#8618; Now choose the EXIT. (Click 'Clear' to reset)";
             $('#okClear').append('<input id="reset" type="button" value="Clear" onClick="document.location.reload(true)">');
             $('#instructions').css('color', 'blue');
         } else if (counter < 2) {
@@ -74,7 +74,7 @@ $(function() {
             m[rc[0]][rc[1]] = "E";
             endRC.push(rc[0]);
             endRC.push(rc[1]);
-            document.getElementById("instructions").innerHTML = "&#8618; Now create your <strong><em>BARRIER/OBSTACLE</em></strong>! (Click 'Okay!' when you're done or 'Clear' to reset)";
+            document.getElementById("instructions").innerHTML = "&#8618; Now create your BARRIER/OBSTACLE. (Click 'Okay!' when you're done or 'Clear' to reset)";
             $('#okClear').append('<input id="done" type="button" value="Okay!" style="background-color:#22272F;" onclick="run(); this.onclick=null;">');
             $('#instructions').css('color', 'red');
         } else {
