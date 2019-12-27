@@ -4,7 +4,7 @@
 
     <head>
         <title>Dat Do</title>
-        <link rel="icon" href="images/header.jpg">
+        <link rel="icon" href="images/header.jpg" alt="">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -29,7 +29,7 @@
             <ul>
                 <li class="active"><a href="index.php" target="_blank"><strong>Dat Do</strong></a></li>
                 <li><a href="index.php#portfolioo" target="_blank"><strong>Portfolio</strong></a></li>
-                <li><a href="resume/Dat Do - Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
+                <li><a href="resume/DatDo-Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
                 <li><a href="contact.php"><strong>Contact</strong></a></li>
             </ul>
         </nav>
