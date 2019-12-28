@@ -131,6 +131,19 @@
             <br><br><hr>
             <h1>Some of my work</h1>
             <div class="container">
+                <button class="accordion">Predicting Python Code</button>
+                <div class="panel">
+                    <p>Sequence-to-Sequence Frequency model used to predict Python code. Dataset given consisted of tokenized Python 
+                        code with method headers and invocators identified to eliminate the process of parsing on the participants' end. 
+                        The goal is to give the top 5 suggestions whenever a "TOKEN_TO_PREDICT" is encountered in the tokenized files.
+                        Approach was initially to use a Compact Prediction Tree but later optimized to eliminate the use of a tree in 
+                        favor of a list. This is because any sequence is guaranteed to be 2 elements long with the first being the 
+                        method header and the second being the method invocator. It was unncessary to traverse through a tree with 
+                        every retrieval of a method invocator. Using a list allows for constant retrievals, and thus, faster when 
+                        there are over hundreds of thousands of sequences (even millions). (The tokenized Python code was extracted 
+                        from roughly 2000 starred Github repos.)
+                    <a href="https://github.com/dddat1017/Compact-Prediction-Trees" target="_blank">Learn more!</a></p>
+                </div>
                 <button class="accordion">PathFinding Visualization</button>
                 <div class="panel">
                     <p>Project Insight: Find the shortest path from a 'starting' cell to an 'exit' cell using the Breadth-First Search 
