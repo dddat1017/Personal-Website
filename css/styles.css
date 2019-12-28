@@ -233,8 +233,15 @@ button.accordion {
 
     .panel.show {
         opacity: 1;
-        max-height: 700px;
+        max-height: 1000px;
         padding: 30px;
+    }
+
+    /* Nav buttons' backgrounds stay transparent when clicked on in mobile */
+    @media (max-width: 1024px) {
+        .panel.show {
+            max-height: 2000px;
+        }
     }
 
     .panel.hide {
@@ -243,7 +250,7 @@ button.accordion {
     }
 
     .panel img {
-        margin-top: 0.25em;
+        margin-top: 0.2em;
     }
 
     /* Links in panels */

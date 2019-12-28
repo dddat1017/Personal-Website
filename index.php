@@ -44,15 +44,13 @@
             <div class="container">
                 <h1>About</h1>
                 <div class="home-about-textbox">
-                    <p>Hi! My name is Dat, I'm a freshman at the University of Washington - Paul G. Allen School of Computer 
-					Science & Engineering! To give a brief overview of who I am, this past summer I interned at Microsoft on the 
-                    Data + AI team within Visual Studio Dev Tools. While there, I had a fantastic opportunity to contribute to the 
-                    launch of a machine learning contest. The summer of 2018, I interned at the Port of Seattle where I also worked 
-                    on some pretty cool ML projects. From facial recognition to natural language processing, the whole experience 
-                    was one to remember. In my free time, I'm an advent Candy Crusher and frisbee slinger! I look forward to learning 
-                    and gaining more hands-on experience as I'm eager to make an impact in this world of technology. 
-                    My goal is to spend a lot more time researching and developing the ideas and theories that interest me the most, 
-                    and share everything that I learn onto this site.</p>
+                    <p>Hey! My name is Dat, I'm currently an undergraduate student at the University of Washington studying Computer
+                    Science. Previously, I was an intern at Microsoft and Port of Seattle, and I graduated with high distinction from
+                    Bellevue College where I earned my Associate of Arts and Sciences. Before coming to UW, I held positions as a Peer
+                    Advisor, Student Government Treasurer, and even as an IT Service Desk Agent. In my free time, I'm an advent Candy 
+                    Crusher, frisbee slinger, and occasional hiker. I look forward to learning and gaining more hands-on experience as 
+                    I'm eager to make an impact in this world of technology. My goal is to spend a lot more time researching and 
+                    developing the ideas and theories that interest me the most, and share everything that I learn onto this site.</p>
                 </div>
             </div>
         </section>
@@ -62,7 +60,9 @@
             <div class="container">
                 <button class="accordion">Microsoft</button>
                 <div class="panel">
-                    <strong>High School Software Engineering Intern</strong><br>
+                    <img src="images/microsoft.png" style="width:50px; height:50px; display: inline; vertical-align: middle; 
+                    margin-top: 0em;" alt=""/><br>
+                    <br><strong>High School Software Engineering Intern</strong><br>
                     June 2019 - September 2019<br>
                     Redmond, WA<br>
                     <br>Worked on the Data + AI Team under Visual Studio Dev Tools. Launched and maintained a machine learning 
@@ -75,7 +75,9 @@
                 </div>
                 <button class="accordion">Port of Seattle & SeaTac Airport</button>
                 <div class="panel">
-                    <strong>Machine Learning Intern</strong><br>
+                    <img src="images/portofseattle.png" style="width:50px; height:50px; display: inline; vertical-align: middle; 
+                    margin-top: 0em;" alt=""/><br>
+                    <br><strong>Machine Learning Intern</strong><br>
                     July 2018 - September 2018<br>
                     Seattle, WA<br>
                     <br>Actively contributed to the Air Cargo Computer Vision prototype in implementing a COCO-trained model over 
@@ -89,7 +91,9 @@
                 </div>
                 <button class="accordion">Bellevue College</button>
                 <div class="panel">
-                    <strong>IT Service Desk Agent</strong><br>
+                    <img src="images/bellevuecollege.jpg" style="width:50px; height:50px; display: inline; vertical-align: middle; 
+                    margin-top: 0em;" alt=""/><br>
+                    <br><strong>IT Service Desk Agent</strong><br>
                     March 2019 - June 2019<br>
                     Bellevue, WA<br>
                     <br>Assisted students, faculty, and administrative staff in resolving various technology-related problems including 
@@ -116,6 +120,8 @@
                 </div>
                 <button class="accordion">Kumon</button>
                 <div class="panel">
+                    <img src="images/kumon.jpg" style="width:50px; height:50px; display: inline; vertical-align: middle; 
+                    margin-top: 0em;" alt=""/><br>
                     <br><strong>Center Assistant</strong><br>
                     January 2017 - August 2017<br>
                     Renton, WA<br>
@@ -180,7 +186,8 @@
             <h1>Knowledge, Knowledge, Knowledge...</h1>
             <br>
             <div class="container">
-                <h3>University of Washington | 2019 - Present</h3>
+                <h3><img src="images/uw.jpg" style="width:50px; height:50px; display: inline; vertical-align: middle; 
+                    margin-top: 0em;" alt=""/>    University of Washington | 2019 - Present</h3>
                 <hr>
                 <p style="text-align:left"><b>CSE 332 - Data Structures and Parallelism (WI 2020, K. Lin):</b> Covers abstract data types and 
                     structures including dictionaries, balanced trees, hash tables, priority queues, and graphs; sorting; asymptotic 
@@ -197,7 +204,8 @@
                     set theory, induction, and algebraic structures with applications to computing; finite state machines; and limits of 
                     computability.</p>
                 <br>
-                <h3>Bellevue College | 2017 - 2019</h3>
+                <h3><img src="images/bellevuecollege.jpg" style="width:50px; height:50px; display: inline; vertical-align: middle; 
+                    margin-top: 0em;" alt=""/>    Bellevue College | 2017 - 2019</h3>
                 <hr>
                 <p style="text-align:left"><b>PHYS 121 - General Engineering Physics I (SP 2019, T. Gamble):</b> Examines fundamental 
                     principles of mechanics, including motion, Newton's laws, work, energy, momentum, rotation, and gravity. Conceptual 
@@ -205,7 +213,7 @@
                     (modeling, errors, graphical analysis, etc.) and prepares students for upper-division research.</p>
                 <p style="text-align:left"><b>ECON& 202 - Macroeconomics (SP 2019, L. Lawrence):</b> Presents major theories of business cycles and 
                     economic growth. Students examine economic policies aimed "at price stability" and unemployment in an industrialized 
-                    capitalist nation as well as factors in international trade and monetary flows. Also cover the development policies 
+                    capitalist nation as well as factors in international trade and monetary flows. Also covers the development policies 
                     of underdeveloped countries.</p>
                 <p style="text-align:left"><b>MATH 208 - Linear Algebra (WI 2019, R. Bauer):</b> Introduces the vocabulary, algebra, and geometry of 
                     vector spaces in "R" and function spaces. Students use matrix methods and vectors to explore systems of linear equations 
@@ -238,7 +246,7 @@
         </section>
 
         <footer class="container-fluid">
-            &copy; 2019 Dat Do - All Rights Reserved.
+            &copy; 2020 Dat Do - All Rights Reserved | Last Updated: December 27, 2019
             <!-- Photos (background images) from Unsplash. -->        
         </footer>
 
