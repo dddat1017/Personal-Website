@@ -140,9 +140,9 @@
                         favor of a list. This is because any sequence is guaranteed to be 2 elements long with the first being the 
                         method header and the second being the method invocator. It was unncessary to traverse through a tree with 
                         every retrieval of a method invocator. Using a list allows for constant retrievals, and thus, faster when 
-                        there are over hundreds of thousands of sequences (even millions). (The tokenized Python code was extracted 
-                        from roughly 2000 starred Github repos.)
-                    <a href="https://github.com/dddat1017/Compact-Prediction-Trees" target="_blank">Learn more!</a></p>
+                        there are over hundreds of thousands of sequences (even millions). The tokenized Python code was extracted 
+                        from roughly 2000 starred Github repos. Tech Stack: Python, Tree/List/Dictionary Data Structures, CPT, etc.
+                    <a href="https://github.com/dddat1017/Compact-Prediction-Tree" target="_blank">Learn more!</a></p>
                 </div>
                 <button class="accordion">PathFinding Visualization</button>
                 <div class="panel">
