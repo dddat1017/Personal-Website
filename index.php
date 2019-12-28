@@ -133,7 +133,7 @@
             <div class="container">
                 <button class="accordion">Predicting Python Code</button>
                 <div class="panel">
-                    <p>Sequence-to-Sequence Frequency model used to predict Python code. Dataset given consisted of tokenized Python 
+                    <p>Project Insight: Sequence-to-Sequence Frequency model used to predict Python code. Dataset given consisted of tokenized Python 
                         code with method headers and invocators identified to eliminate the process of parsing on the participants' end. 
                         The goal is to give the top 5 suggestions whenever a "TOKEN_TO_PREDICT" is encountered in the tokenized files.
                         Approach was initially to use a Compact Prediction Tree but later optimized to eliminate the use of a tree in 

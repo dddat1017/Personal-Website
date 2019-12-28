@@ -44,7 +44,7 @@
         </section>
 
         <footer class="container-fluid">
-            &copy; 2019 Dat Do - All Rights Reserved.        
+            &copy; 2020 Dat Do - All Rights Reserved | Last Updated: December 27, 2019      
         </footer>
 
         <script type = "text/javascript" src="scripts/bfs.js"></script>
