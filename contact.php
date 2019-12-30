@@ -44,7 +44,7 @@
         </section>
 
         <section class="connect">
-            <h1>Connect With Me</h1>
+            <h1>Let's Connect</h1>
             <a href="https://www.linkedin.com/in/dddat/" target="_blank" class="fa fa-linkedin-square" style="font-size:48px;color:#007dbb;padding:0.2em"></a>
             <a href="https://github.com/dddat1017" target="_blank" class="fa fa-github" style="font-size:48px;color:#171515;padding:0.2em"></a>
             <a href="https://www.facebook.com/datdo1017" target="_blank" class="fa fa-facebook-square" style="font-size:48px;color:#345392;padding:0.2em"></a>
