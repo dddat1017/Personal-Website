@@ -52,7 +52,7 @@
         </section>
 
         <footer class="container-fluid">
-            &copy; 2020 Dat Do - All Rights Reserved | Last Updated: December 27, 2019     
+            &copy; 2020 Dat Do - All Rights Reserved | Last Updated: January 1, 2020     
         </footer>
     </body>
     
