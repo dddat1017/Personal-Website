@@ -37,11 +37,15 @@ h1 {
     letter-spacing: 7px;
 }
 
-/* When in mobile, h1 tags are smaller. */
+/* When in mobile, texts are smaller. */
 @media (max-width: 1024px) {
     h1 {
-        font-weight: 600;
-        font-size: 1.7rem;
+        font-weight: 900;
+        font-size: 1.65rem;
+        letter-spacing: 5px;
+    }
+    body {
+        font-size: 0.80rem;
     }
 }
 
@@ -226,6 +230,12 @@ button.accordion {
     button.accordion.active:after {
         content: "\25b2";
         color: #f5f0e1;
+    }
+
+    @media (max-width: 1024px) {
+        button.accordion {
+            font-size: 12px;
+        }
     }
 
 /* Panels when Portfolio Buttons are clicked */
