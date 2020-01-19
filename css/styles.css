@@ -37,6 +37,14 @@ h1 {
     letter-spacing: 7px;
 }
 
+/* When in mobile, h1 tags are smaller. */
+@media (max-width: 1024px) {
+    h1 {
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+}
+
 /* "Dat Do" */
 
 .title {

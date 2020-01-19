@@ -197,7 +197,6 @@
 
         <section class="education" id="education">
             <h1>Undergraduate Coursework</h1>
-            <br>
             <div class="container">
                 <h3><img src="images/uw.jpg" style="width:50px; height:50px; display: inline; vertical-align: middle; 
                     margin-top: 0em;" alt=""/>    University of Washington | 2019 - Present</h3>
