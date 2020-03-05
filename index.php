@@ -148,8 +148,7 @@
                 <div class="panel">
                     <p>Project Insight: Find the shortest path from a 'starting' cell to an 'exit' cell using the Breadth-First Search 
                     (BFS) algorithm. This implementation utlized a queue to traverse through all the possible "nodes", or cells, 
-                    from the start to the exit. The goal is to find a path with the <strong>LEAST number of STEPS</strong> 
-                    (a step being a cell in any direction N,S,W,E,NW,NE,SW,SE), not the "shortest distance". 
+                    from the start to the exit. 
                     Tech stack: JavaScript, JQuery, Queue, etc. <a href="https://github.com/dddat1017/PathFinding-Visualization" 
                     target="_blank">Learn more!</a></p>
                     <a href="pathfind.php" target="_blank">Check it out!</a><br>
