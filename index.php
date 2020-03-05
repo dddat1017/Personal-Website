@@ -34,7 +34,7 @@
             <img src="images/DatDo.png" style="height:280px; width:250px" alt="">
             <h1 class="title">Dat Do</h1>
             <div class="container">
-                <h1 class="intro">Self-learning & navigating the field of computer science through research, exploration, 
+                <h1 class="intro">Self-learning & navigating the field of computing through research, exploration, 
 				and development</h1>
                 <a href="#about" class="button button-accent">Read More</a>
             </div>
@@ -101,7 +101,7 @@
                         troubleshooting.<br>
                     <br><hr>
                     <br><strong>Treasurer of Associated Student Government</strong><br>
-                    September 2018 - June 2019<br>
+                    September 2018 - January 2019<br>
                     Bellevue, WA<br>
                     <br>Held responsibility for the overall administration of the Associated Student Government budget with over $500,000 
                         from four different budget accounts, enabling clubs/programs to operate and grow in and outside of the college. 
@@ -258,7 +258,7 @@
         </section>
 
         <footer class="container-fluid">
-            &copy; 2020 Dat Do - All Rights Reserved | Last Updated: January 1, 2020
+            &copy; 2020 Dat Do - All Rights Reserved | Last Updated: March 4, 2020
             <!-- Photos (background images) from Unsplash. -->        
         </footer>
 
