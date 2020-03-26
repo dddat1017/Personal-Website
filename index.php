@@ -4,19 +4,22 @@
 
     <head>
         <title>Dat Do</title>
-		<meta property="og:title" content="Dat Do"/>
-        <link rel="icon" href="images/header.jpg">
-		<meta property="og:image" content="images/header.jpg"/>
-		<meta property="og:description" content="Self-learning & navigating the field of computer science through research, exploration, 
-		    and development"/>
-		<meta property="og:url" content="https://datddo.com"/>
+        <meta name="title" content="Dat Do">
+        <meta name="description" content="Self-learning & navigating the field of computing through research, exploration, 
+		    and development">
+        <meta name="author" content="Dat Do">
+        <meta name="url" content="https://datddo.com"/>
+        <meta name="image" content="images/header.jpg">
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="icon" href="images/header.jpg">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type = "text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
     </head>
 
     <body>
@@ -26,7 +29,7 @@
                 <li><a href="#portfolio"><strong>Experiences + Projects</strong></a></li>
                 <li><a href="#education"><strong>Education</strong></a></li>
                 <li><a href="resume/DatDo-Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
-                <li><a href="contact.php" target="_blank"><strong>Contact</strong></a></li>
+                <li><a href="contact/" target="_blank"><strong>Contact</strong></a></li>
             </ul>
         </nav>
 
@@ -151,7 +154,7 @@
                     from the start to the exit. 
                     Tech stack: JavaScript, JQuery, Queue, etc. <a href="https://github.com/dddat1017/PathFinding-Visualization" 
                     target="_blank">Learn more!</a></p>
-                    <a href="pathfind.php" target="_blank">Check it out!</a><br>
+                    <a href="pathfind/" target="_blank">Check it out!</a><br>
                     <img src="images/path.gif" style="width:500px; max-width:100%; margin:15px;" alt=""/>
                 </div>
                 <button class="accordion">Scraping Youtube Comments</button>
@@ -258,7 +261,7 @@
 
         <footer class="container-fluid">
             &copy; 2020 Dat Do - All Rights Reserved | Last Updated: March 25, 2020
-            <!-- Photos (background images) from Unsplash. -->        
+            <!-- Photos (background images) from Unsplash. -->
         </footer>
 
         <script type="text/javascript" src="scripts/portfolio_buttons.js"></script>
