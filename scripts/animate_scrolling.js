@@ -1,15 +1,7 @@
-$(window).on('scroll', function() {
-    if($(window).scrollTop()){
-        $('nav').addClass('black');
-    }
-    else
-    {
-        $('nav').removeClass('black');
-    }
-});
-
+// Script to animate automatic scrolling to specific sections
+// in a page. Used in home page only.
 $(document).ready(function() {
-    $('a[href^="#"]').on('click',function (e) {
+    $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         var target = this.hash;
         var $target = $(target);
@@ -21,4 +13,3 @@ $(document).ready(function() {
         });
     });
 });
-

@@ -1,3 +1,5 @@
+// Script to animate the toggle effect of the panels in
+// the portfolio section. Used in home page only.
 var acc = document.getElementsByClassName("accordion");
 var i;
 

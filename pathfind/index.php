@@ -12,7 +12,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="../scripts/extras.js"></script>
+        <script type="text/javascript" src="../scripts/navbar_color.js"></script>
     </head>
 
     <body>
@@ -44,7 +44,7 @@
         </section>
 
         <footer class="container-fluid">
-            &copy; 2020 Dat Do - All Rights Reserved | Last Updated: March 25, 2020
+            &copy; 2020 Dat Do - All Rights Reserved
         </footer>
 
         <script type="text/javascript" src="../scripts/bfs.js"></script>

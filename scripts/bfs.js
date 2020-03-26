@@ -1,3 +1,6 @@
+// Runs BFS algorithm based on user's selections of start/end/barrier cells.
+// Used in pathfinding page only.
+
 // Graph class representing the grid.
 class Graph {
     constructor(r, c) {

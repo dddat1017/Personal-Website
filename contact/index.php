@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="../scripts/extras.js"></script>
+        <script type="text/javascript" src="../scripts/navbar_color.js"></script>
     </head>
 
     <body>
@@ -52,7 +52,7 @@
         </section>
 
         <footer class="container-fluid">
-            &copy; 2020 Dat Do - All Rights Reserved | Last Updated: March 25, 2020
+            &copy; 2020 Dat Do - All Rights Reserved
         </footer>
     </body>
     
