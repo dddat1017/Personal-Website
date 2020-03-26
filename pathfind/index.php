@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
     <head>
         <title>Dat Do</title>
@@ -12,7 +12,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="../scripts/navbar_color.js"></script>
+        <script src="../scripts/navbar_color.js"></script>
     </head>
 
     <body>
@@ -47,7 +47,7 @@
             &copy; 2020 Dat Do - All Rights Reserved
         </footer>
 
-        <script type="text/javascript" src="../scripts/bfs.js"></script>
+        <script src="../scripts/bfs.js"></script>
     </body>
     
 </html>
