@@ -29,7 +29,7 @@
                 <li><a href="#intro"><strong>Dat Do</strong></a></li>
                 <li><a href="#portfolio"><strong>Experiences + Projects</strong></a></li>
                 <li><a href="#education"><strong>Education</strong></a></li>
-                <li><a href="resume/DatDo-Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
+                <li><a href="resume/DatDoResume.pdf" target="_blank"><strong>Resume</strong></a></li>
                 <li><a href="contact/" target="_blank"><strong>Contact</strong></a></li>
             </ul>
         </nav>

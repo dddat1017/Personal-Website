@@ -21,7 +21,7 @@
                 <li><a href="../" target="_blank"><strong>Dat Do</strong></a></li>
                 <li><a href="../#portfolio" target="_blank"><strong>Experiences + Projects</strong></a></li>
                 <li><a href="../#education" target="_blank"><strong>Education</strong></a></li>
-                <li><a href="../resume/DatDo-Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
+                <li><a href="../resume/DatDoResume.pdf" target="_blank"><strong>Resume</strong></a></li>
                 <li><a href="../contact/" target="_blank"><strong>Contact</strong></a></li>
             </ul>
         </nav>
