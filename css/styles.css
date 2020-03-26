@@ -313,63 +313,6 @@ button.accordion {
     color: #f5f0e1;
 }
 
-/* contact page */
-
-.contact {
-    text-align: left;
-    border-radius: 5px;
-    background-color: #F5F5F5;
-    padding: 45px;
-    margin: 0 auto;
-    height: 100vh;
-}
-
-    .contact h1 {
-        padding-top: 65px;
-    }
-
-textarea, input {
-    text-transform: none;
-    font: 12px arial, sans-serif;
-}
-
-    input[type=text], select, textarea {
-        width: 100%; /* Full width */
-        padding: 15px; /* Some padding */
-        border: 1px solid #ccc; /* Gray border */
-        border-radius: 6px; /* Rounded borders */
-        box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 6px; /* Add a top margin */
-        margin-bottom: 16px; /* Bottom margin */
-        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-    }
-
-/* Style the submit button with a specific background color etc */
-button[type=submit] {
-    background-color: #22272F;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-    /* When moving the mouse over the submit button, add a dark golden rod color */
-    button[type=submit]:hover {
-        background-color: darkgoldenrod;
-    }
-
-/* Reset button */
-button[type=reset] {
-    font-size: 8px;
-    background-color: grey;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
 /* PathFinding Page */
 
 table {

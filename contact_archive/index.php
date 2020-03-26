@@ -28,7 +28,7 @@
         <section class="contact">
             <div class="container">
                 <h1>Let's Talk!</h1>
-                <form class="contact-form" action="contactform.php" method="post">
+                <form class="contact-form" action="index.php" method="post">
                     <label>Name</label>
                     <input type="text" name="name" placeholder="Full Name">
                     <label>Email</label>

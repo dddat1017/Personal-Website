@@ -30,7 +30,7 @@
                 <li><a href="#portfolio"><strong>Experiences + Projects</strong></a></li>
                 <li><a href="#education"><strong>Education</strong></a></li>
                 <li><a href="resume/DatDoResume.pdf" target="_blank"><strong>Resume</strong></a></li>
-                <li><a href="contact/" target="_blank"><strong>Contact</strong></a></li>
+                <li><a href="#connect" target="_blank"><strong>Contact</strong></a></li>
             </ul>
         </nav>
 
@@ -252,7 +252,7 @@
             </div>
         </section>
 
-        <section class="connect">
+        <section class="connect" id="connect">
             <h1>Let's Connect</h1>
             <a href="https://www.linkedin.com/in/dddat/" target="_blank" class="fa fa-linkedin-square" style="font-size:48px;color:#1778B5;padding:0.2em"></a>
             <a href="https://github.com/dddat1017" target="_blank" class="fa fa-github" style="font-size:48px;color:#171515;padding:0.2em"></a>
