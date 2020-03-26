@@ -1,83 +1,3 @@
-// Set-up. Wait for user to select the start/end/barrier.
-$(function() {
-    var isMouseDown = false;
-    var eyeD;
-    var rc; 
-    var counter = 0;
-    var htmlText = "";
-
-    // on desktops/laptops.
-    $('td').mousedown(function() {
-        isMouseDown = true;
-        if (counter < 1) {
-            eyeD = $(this).attr('id');    // get 'id' of the 'td' clicked.
-
-            // extract the row and col from the 'id' of the 'td' clicked, and put them in an array.
-            rc = eyeD.split('rc').map(Number);
-            $(this).css('background-color', 'green');
-            $(this).off('mousedown');
-            $(this).off('mouseover');
-            counter++;
-            visited[rc[0]][rc[1]] = true;
-            sRC = new GridCell(rc[0], rc[1]);
-            htmlText += "&#8618; Now choose the EXIT. (Click 'Clear' to reset)";
-            document.getElementById("instructions").innerHTML = htmlText;
-            $('#okClear')
-                .append('<input id="reset" type="button" value="Clear" onClick="document.location.reload(true)">');
-            $('#instructions').css('color', 'blue');
-        } else if (counter < 2) {
-            eyeD = $(this).attr('id');    // get 'id' of the 'td' clicked.
-
-            // extract the row and col from the 'id' of the 'td' clicked, and put them in an array.
-            rc = eyeD.split('rc').map(Number);
-            $(this).css('background-color', 'blue');
-            $(this).off('mousedown');
-            $(this).off('mouseover');
-            counter++;
-            eRC = new GridCell(rc[0], rc[1]);
-            htmlText = "&#8618; Now create your BARRIER/OBSTACLE. ";
-            htmlText += "(Click 'Okay!' when you're done or 'Clear' to reset)";
-            document.getElementById("instructions").innerHTML = htmlText;
-            htmlText = '<input id="done" type="button" value="Okay!" style="background-color:#22272F;" ';
-            htmlText += 'onclick="run(); this.onclick=null;">';
-            $('#okClear')
-                .append(htmlText);
-            $('#instructions').css('color', 'red');
-        } else {
-            eyeD = $(this).attr('id');  // get 'id' of the 'td' clicked.
-
-            // extract the row and col from the 'id' of the 'td' clicked, and put them in an array.
-            rc = eyeD.split('rc').map(Number);
-            $(this).addClass("highlighted");
-            $(this).off('mousedown');
-            counter++;
-            visited[rc[0]][rc[1]] = true;
-            return false; // prevent text selection
-        }
-    });
-
-    // on desktops/laptops.
-    $('td').mouseover(function () {
-        if (isMouseDown && counter > 1) {
-            eyeD = $(this).attr('id');    // get 'id' of the 'td' clicked.
-
-            // extract the row and col from the 'id' of the 'td' clicked, and put them in an array.
-            rc = eyeD.split('rc').map(Number);
-            $(this).addClass("highlighted");
-            $(this).off('mouseover');
-            counter++;
-            visited[rc[0]][rc[1]] = true;
-        }
-    }).bind("selectstart", function () {
-        return false;
-    });
-
-    // on desktops/laptops.
-    $('td').mouseup(function () {
-        isMouseDown = false;
-    });
-});
-
 // Graph class representing the grid.
 class Graph {
     constructor(r, c) {
@@ -174,7 +94,7 @@ class Search {
         this.edgeTo_[startRC.hashKey()] = startRC;
         visitedMatrix[startRC.getRow()][startRC.getColumn()] = true;
 
-        // direction vectors for going N,S,E,W,NE,NW,SE,SW.
+        // Direction vectors for going N,S,E,W,NE,NW,SE,SW.
         var up = [0, 1, -1];
         var down = [0, 1, -1];
 
@@ -221,12 +141,12 @@ class Search {
 
 // Create.
 var graph = new Graph(20, 60);
-var grid = graph.getGrid();
-var visited = graph.getVisitedMatrix();
-var rows = graph.getRows();
-var cols = graph.getCols();
-var sRC;
-var eRC;
+var grid = graph.getGrid();  // Grid.
+var visited = graph.getVisitedMatrix();  // Matrix initialized w/ 'false', for not visited.
+var rows = graph.getRows();  // # of rows in the grid.
+var cols = graph.getCols();  // # of cols in the grid.
+var sRC;  // The start cell's row,col values.
+var eRC;  // The end cell's row,col values.
 
 $("#tableContainer").append(grid);  // Add the grid to html.
 
@@ -269,3 +189,86 @@ function run() {
         $('#instructions').css('color', 'black');
     } 
 }
+
+// Wait for user to select the start/end/barrier. Once 'Okay!' is selected, run() is invoked.
+$(function() {
+    var isMouseDown = false;
+    var eyeD;
+    var rc; 
+    var counter = 0;
+    var htmlText = "";
+
+    // On desktops/laptops.
+    $('td').mousedown(function() {
+        isMouseDown = true;
+        if (counter < 1) {
+            // First selection is the start cell.
+            eyeD = $(this).attr('id');  // Get 'id' of the 'td' clicked.
+
+            // Extract the row and col from the 'id' of the 'td' clicked, and put them in an array.
+            rc = eyeD.split('rc').map(Number);
+            $(this).css('background-color', 'green');
+            $(this).off('mousedown');
+            $(this).off('mouseover');
+            counter++;
+            visited[rc[0]][rc[1]] = true;  // Mark the start cell as 'true', for visited.
+            sRC = new GridCell(rc[0], rc[1]);  // Record the start cell's row,col values.
+            htmlText += "&#8618; Now choose the EXIT. (Click 'Clear' to reset)";
+            document.getElementById("instructions").innerHTML = htmlText;
+            $('#okClear')
+                .append('<input id="reset" type="button" value="Clear" onClick="document.location.reload(true)">');
+            $('#instructions').css('color', 'blue');
+        } else if (counter < 2) {
+            // Second selection is the end cell.
+            eyeD = $(this).attr('id');  // Get 'id' of the 'td' clicked.
+
+            // Extract the row and col from the 'id' of the 'td' clicked, and put them in an array.
+            rc = eyeD.split('rc').map(Number);
+            $(this).css('background-color', 'blue');
+            $(this).off('mousedown');
+            $(this).off('mouseover');
+            counter++;
+            eRC = new GridCell(rc[0], rc[1]);  // Record the end cell's row,col values.
+            htmlText = "&#8618; Now create your BARRIER/OBSTACLE. ";
+            htmlText += "(Click 'Okay!' when you're done or 'Clear' to reset)";
+            document.getElementById("instructions").innerHTML = htmlText;
+            htmlText = '<input id="done" type="button" value="Okay!" style="background-color:#22272F;" ';
+            htmlText += 'onclick="run(); this.onclick=null;">';
+            $('#okClear')
+                .append(htmlText);
+            $('#instructions').css('color', 'red');
+        } else {
+            // Barrier selections.
+            eyeD = $(this).attr('id');  // Get 'id' of the 'td' clicked.
+
+            // Extract the row and col from the 'id' of the 'td' clicked, and put them in an array.
+            rc = eyeD.split('rc').map(Number);
+            $(this).addClass("highlighted");
+            $(this).off('mousedown');
+            counter++;
+            visited[rc[0]][rc[1]] = true;  // Mark all barrier cells as 'true', for visited.
+            return false;  // Prevent text selection.
+        }
+    });
+
+    // On desktops/laptops. For selecting multiple barrier cells at once (i.e. click and drag).
+    $('td').mouseover(function () {
+        if (isMouseDown && counter > 1) {
+            eyeD = $(this).attr('id');  // Get 'id' of the 'td' clicked.
+
+            // Extract the row and col from the 'id' of the 'td' clicked, and put them in an array.
+            rc = eyeD.split('rc').map(Number);
+            $(this).addClass("highlighted");
+            $(this).off('mouseover');
+            counter++;
+            visited[rc[0]][rc[1]] = true;  // Mark all barrier cells as 'true', for visited.
+        }
+    }).bind("selectstart", function () {
+        return false;
+    });
+
+    // On desktops/laptops.
+    $('td').mouseup(function () {
+        isMouseDown = false;
+    });
+});
