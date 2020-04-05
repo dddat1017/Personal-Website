@@ -171,9 +171,10 @@ function run() {
     document.getElementById("instructions").innerHTML = "> Please wait until the path is found!";
     $('#instructions').css('color', '#48D1CC');
 
+    var statesExplored = bfs.statesExplored();
+
     var htmlText = "";
     if (bfs.isSuccessful()) {
-        var statesExplored = bfs.statesExplored();
         var path =  bfs.getPath();
 
         var t = setInterval(doSequence, 0.01);
@@ -198,10 +199,20 @@ function run() {
             }
         }
     } else {
-        htmlText += "> No possible path found. Click 'Clear' to reset and try again!";
-        document.getElementById("instructions").innerHTML = htmlText;
-        $('#instructions').css('color', 'black');
-    } 
+        var t = setInterval(doSequence, 0.01);
+        function doSequence() {
+            if (!statesExplored.isEmpty()) {
+                // Display all the states explored.
+                var state = statesExplored.remove();
+                $("#" + state.getRow() + "r" + "c" + state.getColumn()).css('background-color', '#7FFFD4');
+            } else {
+                htmlText += "> No possible path found. Click 'Clear' to reset and try again!";
+                document.getElementById("instructions").innerHTML = htmlText;
+                $('#instructions').css('color', 'black');
+                clearInterval(t);
+            }
+        }
+    }
 }
 
 // Wait for user to select the start/end/barrier. Once 'Okay!' is selected, run() is invoked.

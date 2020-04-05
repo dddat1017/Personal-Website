@@ -203,9 +203,10 @@ function birun() {
     document.getElementById("instructions").innerHTML = "> Please wait until the path is found!";
     $('#instructions').css('color', '#48D1CC');
 
+    var statesExplored = bfs.statesExplored();
+
     var htmlText = "";
     if (bfs.isSuccessful()) {
-        var statesExplored = bfs.statesExplored();
         var path =  bfs.getPath();  // Array of forward/backward edgeTo maps and the 'mid' cell.
         var forward = path[0];  // Forward edgeTo map.
         var backward = path[1]; // Backward edgeTo map.
@@ -242,9 +243,19 @@ function birun() {
             }
         }
     } else {
-        htmlText += "> No possible path found. Click 'Clear' to reset and try again!";
-        document.getElementById("instructions").innerHTML = htmlText;
-        $('#instructions').css('color', 'black');
+        var t = setInterval(doSequence, 0.01);
+        function doSequence() {
+            if (!statesExplored.isEmpty()) {
+                // Display all the states explored.
+                var state = statesExplored.remove();
+                $("#" + state.getRow() + "r" + "c" + state.getColumn()).css('background-color', '#7FFFD4');
+            } else {
+                htmlText += "> No possible path found. Click 'Clear' to reset and try again!";
+                document.getElementById("instructions").innerHTML = htmlText;
+                $('#instructions').css('color', 'black');
+                clearInterval(t);
+            }
+        }
     } 
 }
 
