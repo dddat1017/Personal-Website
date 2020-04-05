@@ -342,10 +342,10 @@ td {
         padding-top: 10px;
     }
 
-#instructions {
-    font-weight: bold;
-    margin-bottom: 7px;
-    color: green;
+.info::after {
+    clear: both;
+    display: table;
+    content: '';
 }
 
 #okButton {

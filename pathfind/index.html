@@ -13,6 +13,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="../scripts/navbar_color.js"></script>
+        <script src="../scripts/change_script.js"></script>
     </head>
 
     <body>
@@ -28,9 +29,18 @@
         <section class="pathfind">
             <div class="container">
                 <h1>Let's PathFind!</h1>
-                <div id="instructions">&#8618; Choose your START.</div>
+                <div class="info">
+                    <div id="instructions"></div>
+                    <div id="choices" style="float:right;">
+                        <input type="radio" name="answer" checked="checked" id="reg" value="regular" onChange="reloadP(this.value);"/> Regular
+                        <input type="radio" name="answer" id="bi" value="bidirectional" onChange="reloadP(this.value);"/> Bidirectional
+                    </div>
+                </div>
                 <div id="tableContainer"></div>
                 <div id="okClear"></div>
+            </div>
+            <div id="jsscript">
+                <script src="../scripts/bfs.js"></script>
             </div>
         </section>
 
@@ -45,8 +55,6 @@
         <footer class="container-fluid">
             &copy; 2020 Dat Do - All Rights Reserved
         </footer>
-
-        <script src="../scripts/bfs.js"></script>
     </body>
     
 </html>
